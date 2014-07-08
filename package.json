@@ -1,0 +1,23 @@
+{
+  "name": "xhrhelpers",
+  "version": "0.0.0",
+  "description": "xhr testing helper",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yola/xhrhelpers.git"
+  },
+  "author": "Yola Engineering <engineers@yola.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yola/xhrhelpers/issues"
+  },
+  "homepage": "https://github.com/yola/xhrhelpers",
+  "dependencies": {
+    "mocha": "1.20.x",
+    "chai": "1.9.x"
+  }
+}
