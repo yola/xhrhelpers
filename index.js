@@ -1,3 +1,11 @@
+var twoHundredsOrThrow = function(response) {
+  if (response.xhr.status > 299) {
+    throw new Error('Status code > 299');
+  }
+
+  return response;
+};
+
 module.exports = {
   status: function(response) {
     return response.xhr.status;
