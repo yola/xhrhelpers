@@ -3,8 +3,8 @@ module.exports = {
     return response.xhr.status;
   },
 
-  response: function(response) {
-    return JSON.parse(response.xhr.response);
+  responseObject: function(response) {
+    return JSON.parse(response.xhr.responseText);
   },
 
   responseText: function(response) {
