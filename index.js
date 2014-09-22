@@ -13,7 +13,7 @@ module.exports = {
 
   twoHundredsOrThrow: function(response) {
     if (response.xhr.status > 299) {
-      throw new Error('Status code > 299');
+      throw response;
     }
 
     return response;
