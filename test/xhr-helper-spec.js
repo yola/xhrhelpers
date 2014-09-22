@@ -17,10 +17,10 @@ describe('xhr helper', function() {
   it('returns a parsed response object', function() {
     var response = {
       xhr: {
-        response: '{"key": "value"}'
+        responseText: '{"key": "value"}'
       }
     };
-    xhrHelper.response(response).should.deep.equal({key: "value"});
+    xhrHelper.responseObject(response).should.deep.equal({key: "value"});
   });
 
   it('returns response test', function() {
