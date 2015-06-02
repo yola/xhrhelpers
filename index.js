@@ -4,6 +4,11 @@ module.exports = {
   },
 
   responseObject: function(response) {
+    try {
+      JSON.parse(response.xhr.responseText);
+    } catch(err) {
+      return {invalid_JSON: response.xhr.responseText};
+    }
     return JSON.parse(response.xhr.responseText);
   },
 
