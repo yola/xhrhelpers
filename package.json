@@ -1,6 +1,6 @@
 {
   "name": "xhrhelpers",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "xhr testing helper",
   "main": "index.js",
   "scripts": {
@@ -16,8 +16,8 @@
     "url": "https://github.com/yola/xhrhelpers/issues"
   },
   "homepage": "https://github.com/yola/xhrhelpers",
-  "dependencies": {
-    "mocha": "1.20.x",
-    "chai": "1.9.x"
+  "devDependencies": {
+    "mocha": "2.x.x",
+    "chai": "3.x.x"
   }
 }
